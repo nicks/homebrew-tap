@@ -26,6 +26,7 @@ class Tilt < Formula
 
   if Gem::Specification::find_all_by_name('tilt').any?
     odie "Tilt conflicts with the Ruby tilt gem. Either uninstall the gem (gem uninstall tilt) or use the tlt alias (brew install tilt-dev/tap/tlt)"
+  end
 
   def install
     bin.install "tilt"
