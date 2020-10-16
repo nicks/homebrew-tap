@@ -24,6 +24,9 @@ class Tilt < Formula
     end
   end
 
+  conflicts_with "tilt",
+    because: "You have a conflicting 'tilt' executable"
+
   def install
     bin.install "tilt"
   end
