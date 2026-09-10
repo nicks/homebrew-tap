@@ -5,13 +5,13 @@
 class Rift < Formula
   desc "Tiling window manager for macOS (nicks fork of acsandmann/rift)"
   homepage "https://github.com/nicks/rift"
-  version "0.5.7-nicks.1"
+  version "0.5.7-nicks.2"
   license "Apache-2.0"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/nicks/rift/releases/download/v0.5.7-nicks.1/rift_0.5.7-nicks.1_darwin_amd64.tar.gz"
-    sha256 "a43a68282503475fa33f32f726a03757124a7c018f722f5d5ad350ecf5a3c2a1"
+    url "https://github.com/nicks/rift/releases/download/v0.5.7-nicks.2/rift_0.5.7-nicks.2_darwin_amd64.tar.gz"
+    sha256 "1e554c76255366a54d6f05b50232372f037d108721dd11147c8318e8816f84f2"
 
     define_method(:install) do
       bin.install "rift"
@@ -25,8 +25,8 @@ class Rift < Formula
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/nicks/rift/releases/download/v0.5.7-nicks.1/rift_0.5.7-nicks.1_darwin_arm64.tar.gz"
-    sha256 "4cf6149b280da3cd17e85313a2a4761d3647b47dadc5c34828ca64c691a123ff"
+    url "https://github.com/nicks/rift/releases/download/v0.5.7-nicks.2/rift_0.5.7-nicks.2_darwin_arm64.tar.gz"
+    sha256 "5a94d943532af0ecc10dfd4f33bfaaf5ae43d2d498d050618a2b1e8b785a3b42"
 
     define_method(:install) do
       bin.install "rift"
